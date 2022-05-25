@@ -6,7 +6,7 @@ class ProductCollection {
 	}
 
 	async getById(id: number) {
-		return (await this.getAll()).find((x) => x.id == id);
+		return (await this.getAll()).find((product) => product.id == id);
 	}
 }
 
